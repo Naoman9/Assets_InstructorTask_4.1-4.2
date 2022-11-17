@@ -520,6 +520,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyGameObject: {fileID: 0}
+  textureColor: {fileID: 2100000, guid: 3e017dcd58df3420a8bbf209db3cc837, type: 2}
+  collisionColor: {fileID: 0}
 --- !u!1 &757441824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8518234328929065670, guid: 95a8a953ce82f4e948127f154efc80d4, type: 3}
@@ -537,13 +539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25cd989a07a084a12a751004fe31c2bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 680574611}
-  EnemyList:
-  - {fileID: 680574611}
-  - {fileID: 1356163906}
-  - {fileID: 1832788993}
-  - {fileID: 1460958676}
-  nearestEnemy: {fileID: 0}
 --- !u!135 &757441833
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -825,11 +820,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4935744643240530012, guid: 2bae9dcc59cf846c694e359a5ad5b3a9, type: 3}
   m_PrefabInstance: {fileID: 226365049}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1356163906 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4935744643240529985, guid: 2bae9dcc59cf846c694e359a5ad5b3a9, type: 3}
-  m_PrefabInstance: {fileID: 226365049}
-  m_PrefabAsset: {fileID: 0}
 --- !u!135 &1356163907
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1017,11 +1007,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4017221691163889010, guid: 62463660753cf441ab8ec02994afa7ef, type: 3}
   m_PrefabInstance: {fileID: 1242432459}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1460958676 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4017221691163889007, guid: 62463660753cf441ab8ec02994afa7ef, type: 3}
-  m_PrefabInstance: {fileID: 1242432459}
-  m_PrefabAsset: {fileID: 0}
 --- !u!135 &1460958677
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1084,11 +1069,6 @@ Transform:
 --- !u!1 &1832788986 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2071067201819623573, guid: c614fdc78347247dab75a7e24ba765a3, type: 3}
-  m_PrefabInstance: {fileID: 506756191}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1832788993 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2071067201819623560, guid: c614fdc78347247dab75a7e24ba765a3, type: 3}
   m_PrefabInstance: {fileID: 506756191}
   m_PrefabAsset: {fileID: 0}
 --- !u!135 &1832788994

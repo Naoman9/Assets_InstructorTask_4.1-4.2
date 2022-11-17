@@ -6,20 +6,23 @@ public class Enemy : MonoBehaviour
 {
     public float speed = 2.0f;
     private Rigidbody enemyRb;
-    public GameObject player, enemy_1, enemy_2, enemy_3, enemy_4;
+    public GameObject player, enemy_1 , enemy_2 , enemy_3, enemy_4;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
         player = GameObject.Find("Player");
+        enemy_1 = GameObject.Find("Enemy_1");
+        enemy_2 = GameObject.Find("Enemy_2");
+        enemy_3 = GameObject.Find("Enemy_3");
+        enemy_4 = GameObject.Find("Enemy_4");
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 lookDirection = (player.transform.position - transform.position).normalized;
-
         enemyRb.AddForce(lookDirection * speed);
     }
 
@@ -27,7 +30,7 @@ public class Enemy : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Vector3 lookDirection = (enemy_1.transform.position - transform.position).normalized;
+            Vector3 lookDirection = (player.transform.position - transform.position).normalized;
             enemyRb.AddForce(lookDirection * speed);
         }
         else if (other.gameObject.CompareTag("Enemy_1"))

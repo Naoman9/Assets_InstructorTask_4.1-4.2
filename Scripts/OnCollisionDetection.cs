@@ -9,10 +9,15 @@ public class OnCollisionDetection : MonoBehaviour
 
     public static int score = 0;
 
+    public Material textureColor;
+
+    public MeshRenderer collisionColor;
+
     // Start is called before the first frame update
     void Start()
     {
         destroyGameObject = GetComponent<DestroyGameObject>();
+        collisionColor = GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -29,9 +34,14 @@ public class OnCollisionDetection : MonoBehaviour
            && destroyGameObject.enemyDestroyed)
         {
             transform.localScale += new Vector3(1, 1, 1);
+
+            collisionColor.material = textureColor;
+
             score = score + 1;
 
             Debug.Log(score);
+
+
         }
     }
 
