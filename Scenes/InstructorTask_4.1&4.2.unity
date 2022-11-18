@@ -520,7 +520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyGameObject: {fileID: 0}
-  textureColor: {fileID: 2100000, guid: 3e017dcd58df3420a8bbf209db3cc837, type: 2}
+  textureColor: {fileID: 2100000, guid: 6661fa7539a9c4dd9876ea2718c1d3fe, type: 2}
   collisionColor: {fileID: 0}
 --- !u!1 &757441824 stripped
 GameObject:
